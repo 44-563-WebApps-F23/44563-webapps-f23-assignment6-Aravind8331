@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <title>Cruise</title>
+<body>
+
+<h2>Aravind goes on a cruise</h2>
+
+<form>
+    <input type="checkbox" id="shared" name="shared" value="True">
+    <label for="cb1_cheese">Shares Cabin</label></br>
+  
+    <input type="checkbox" id="breakfast" name="breakfast" value="True">
+    <label for="cb1_olive">Breakfast</label></br>
+  
+    <input type="checkbox" id="pool" name="pool" value="False">
+    <label for="cb1_onion">Pool Pass</label></br>
+
+    <input type="button" onclick="SelectCruise()" value="Select a cruise">
+  </form>
+  
+<p id="result"> </p>
+
+<script> 
+ var my_cruise={};
+function SelectCruise(){
+my_cruise = {};
+my_cruise.shared = document.getElementById('shared').checked;
+my_cruise.breakfast = document.getElementById('breakfast').checked;
+my_cruise.pool = document.getElementById('pool').checked;
+document.getElementById('result').innerHTML = "The values are "+my_cruise.shared+" and "+my_cruise.breakfast+" and "+my_cruise.pool;
+}
+</script>
+
+</body>
+</html> 
