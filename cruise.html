@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
  <title>Cruise</title>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 <body>
 
 <h2>Aravind goes on a cruise</h2>
@@ -33,10 +35,10 @@ document.getElementById('result').innerHTML = "The values are "+my_cruise.shared
 
 <form>
     <label for="days">Enter the number of days</label>
-    <input type="text" id="days" value="DAYS"><br>
+    <input type="text" id="days" value="DAYS" class="form-control mb-2"><br>
 
     <label for="price">Enter price</label>
-    <input type="text" id="price" value="PRICE"><br>
+    <input type="text" id="price" value="PRICE" class="form-control mb-2"><br>
 
     <input type="button" onclick="updateCruise()" value="Update Cruise">
 </form>
